@@ -11,7 +11,7 @@ ratio controls decision "swap" or "drop"(if 0 then drop, if 100 then swap?)?
 ```
 $ cat /etc/sysctl.conf
 
-vm.swappiness = 90
+vm.swappiness = 80
 #vm.
 vm.dirty_writeback_centisecs=1500
 vm.dirty_expire_centisecs=4000
