@@ -4,6 +4,8 @@ https://wiki.archlinux.org/index.php/Zswap
 
 swapfile
 https://wiki.archlinux.org/index.php/swap
+
+Customize swappiness:
 ```
 $ cat /etc/sysctl.conf
 
@@ -14,7 +16,7 @@ vm.dirty_expire_centisecs=4000
 vm.dirty_background_ratio=25
 vm.dirty_ratio=25
 ```
-Add and enable compressor
+Add and enable compressor:
 ```
 $ cat /etc/default/grub 
 
@@ -27,6 +29,7 @@ GRUB_CMDLINE_LINUX="rhgb quiet zswap.enabled=1 zswap.compressor=lzo"
 GRUB_DISABLE_RECOVERY="true"
 ```
 
+Use swapfile:
 ```
 grub2-mkconfig -o /boot/grub2/grub.cfg
 swapon --show
