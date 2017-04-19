@@ -1,6 +1,12 @@
 # swapfile and zswap
 
 Customize swappiness:
+
+http://forum.ubuntu.ru/index.php?PHPSESSID=r8uhbu5qhqft1soa8puc7qhv74&topic=281280.15
+https://en.wikipedia.org/wiki/Swappiness
+
+swappiness is delay of return of "old" pages from swap.
+ratio controls decision "swap" or "drop"(if 0 then drop, if 100 then swap?)?
 ```
 $ cat /etc/sysctl.conf
 
