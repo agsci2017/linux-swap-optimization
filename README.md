@@ -39,6 +39,7 @@ mkswap /swapfile
 swapon /swapfile
 ```
 ```
-vi /etc/fstab
+$cat /etc/fstab
+...
 /swapfile none swap defaults,noatime 0 0
 ```
