@@ -14,9 +14,8 @@ vm.dirty_expire_centisecs=4000
 vm.dirty_background_ratio=25
 vm.dirty_ratio=25
 ```
-
+Add and enable compressor
 ```
-#add and enable compressor
 $ cat /etc/default/grub 
 
 GRUB_TIMEOUT=5
