@@ -1,10 +1,5 @@
 # swapfile and zswap
 
-https://wiki.archlinux.org/index.php/Zswap
-
-swapfile
-https://wiki.archlinux.org/index.php/swap
-
 Customize swappiness:
 ```
 $ cat /etc/sysctl.conf
@@ -43,3 +38,8 @@ $ cat /etc/fstab
 ...
 /swapfile none swap defaults,noatime 0 0
 ```
+
+https://wiki.archlinux.org/index.php/Zswap
+
+swapfile
+https://wiki.archlinux.org/index.php/swap
