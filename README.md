@@ -5,7 +5,8 @@ https://wiki.archlinux.org/index.php/Zswap
 swapfile
 https://wiki.archlinux.org/index.php/swap
 ```
-cat /etc/sysctl.conf
+$ cat /etc/sysctl.conf
+
 vm.swappiness = 90
 #vm.
 vm.dirty_writeback_centisecs=1500
@@ -16,7 +17,8 @@ vm.dirty_ratio=25
 
 ```
 #add and enable compressor
-cat /etc/default/grub 
+$ cat /etc/default/grub 
+
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
 GRUB_DEFAULT=saved
