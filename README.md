@@ -49,3 +49,6 @@ swapfile
 https://wiki.archlinux.org/index.php/swap
 
 goo.gl/OWiIBs
+
+I don't recommend to use lz4.
+"better is the enemy of good"
