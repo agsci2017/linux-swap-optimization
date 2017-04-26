@@ -54,3 +54,5 @@ goo.gl/OWiIBs
 
 I don't recommend to use lz4.
 "better is the enemy of good"
+
+If HDD supports NCQ then set elevator=deadline as kernel option.
