@@ -27,10 +27,12 @@ GRUB_TERMINAL_OUTPUT="console"
 GRUB_CMDLINE_LINUX="rhgb quiet zswap.enabled=1 zswap.compressor=lzo"
 GRUB_DISABLE_RECOVERY="true"
 ```
+```
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
 
 Use swapfile:
 ```
-grub2-mkconfig -o /boot/grub2/grub.cfg
 swapon --show
 fallocate -l 2048M /swapfile
 chmod 600 /swapfile
